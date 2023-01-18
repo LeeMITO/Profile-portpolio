@@ -1,0 +1,67 @@
+$size: 160px;
+body {
+    background-color: #222;
+}
+.circle_progress {
+  position: relative;
+  width: $size;
+  height: $size;
+  margin-bottom: 20px;
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    border: $size*0.1 solid #fff;
+    box-sizing: border-box;
+    content: "";
+  }
+  .left, .right {
+    position: absolute;
+    top: 0;
+    width: $size/2;
+    height: $size;
+    overflow: hidden;
+    z-index: 10;
+    .bar {
+      position: absolute;
+      top: 0;
+      width: $size/2;
+      height: $size;
+      border: $size*0.1 solid  #03c75a;
+      box-sizing: border-box;
+    }
+  }
+  .left {
+    left: 0;
+    & .bar {
+      left: $size/2;
+      border-top-right-radius: $size;
+      border-bottom-right-radius: $size;
+      border-left: 0;
+      transform-origin: center left;
+    }
+  }
+  .right {
+    right: 0;
+    & .bar {
+      right: $size/2;
+      border-top-left-radius: $size;
+      border-bottom-left-radius: $size;
+      border-right: 0;
+      transform-origin: center right;
+    }
+  }
+  .value {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    font-size: $size/10;
+    color: #888;
+    line-height: $size;
+    text-align: center;
+    position: absolute;
+  }
+}

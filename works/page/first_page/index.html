@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" property="og:title" content="설악산국립공원">
+    <meta name="images" property="og:image" content="./images/thumnail.jpg">
+    <meta name="description" property="og:description" content="자연을 보존하여 건강하고 행복한 미래를 열어갑니다.">
+    <meta name="type" property="og:type" content="article">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/seoraksan.css">
+    <link rel="shortcut icon" href="./images/favicon.ico">
+    <title>Seorak national park</title>
+    <script>
+        function video_start() {
+            document.getElementById("prvideo").play();
+        }
+        function video_stop() {
+            document.getElementById("prvideo").pause();
+        }
+        function hd_start() {
+            document.getElementById("videoplay").play();
+        }
+        function hd_stop() {
+            document.getElementById("videoplay").pause();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            
+            <video id="videoplay" autoplay muted poster="images/헤더이미지(영상일부).png"> 
+                <source src="https://tv.knps.or.kr/media/90/M20170207163733.mp4" type="video/mp4">
+            </video>
+            <div class="text-logo-menu">
+                <div class="container">
+                    <div class="mttext">
+                        <strong>우리는 자연을 보존하여<br> 건강하고 행복한 미래를 열어갑니다.</strong>
+                    </div>
+                    <div class="logo-menu-flexbox">
+                        <!--메뉴바-->
+                        <div class="logo">
+                            <h1><a href="#"><img src="./images/헤더로고.png" alt="logo"></a></h1>
+                        </div>
+                        <nav class="main-menu" id="gnb">
+                            <ul class="gnb">
+                                <li>
+                                    <a href="#">공원소개</a>
+                                    <ul class = 'lnb'>
+                                        <li><a href="#">공원 연혁</a></li>
+                                        <li><a href="#">공원 깃대종</a></li>
+                                        <li><a href="#">공원시설 안내</a></li>
+                                        <li><a href="#">사무소 오시는길</a></li>
+                                        <li><a href="#">이용요금</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">탐방로안내</a>
+                                    <ul class="lnb">
+                                        <li><a href="#">코스별 난이도</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">열린마당</a>
+                                    <ul class="lnb">
+                                        <li><a href="#">사무소 알림판</a></li>
+                                        <li><a href="#">채용정보</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">홍보관</a>
+                                    <ul class="lnb">
+                                        <li><a href="#">안내자료</a></li>
+                                        <li><a href="#">동영상자료</a></li>
+                                        <li><a href="#">생생포토</a></li>
+                                        <li><a href="#">설악산 소식</a></li>
+                                        <li><a href="#">사진전</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">프로그램</a>
+                                    <ul class="lnb">
+                                        <li><a href="#">프로그램 예약</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"><img class="ham1" src="./images/통제알림 아이콘.png" alt="통제알림">실시간통제정보</a></li>
+                            </ul>
+                        </nav>
+                        <div class="right-menu">
+                            <ul>
+                                <li>
+                                    <form action="#" method="post">
+                                        <select name="language" id="language">
+                                            <option value="">LANGUAGE</option>
+                                            <option value="korean">Korean</option>
+                                            <option value="English">English</option>
+                                            <option value="Japanese">Japanese</option>
+                                            <option value="Chinese">Chinese</option>
+                                        </select>
+                                    </form>
+                                </li>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#"><img src="./images/메뉴아이콘.png"></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div><!-- logo-menu-flexbox -->
+
+                </div><!-- container -->
+            </div><!-- text-logo-menu -->
+            <div class="bottom-text-menu">
+            <div class="container">
+                <div class="text-menu">
+                    <div class="text-button">
+                        <p><img src="./images/설악산 아이콘.png">설악산국립공원</p>
+                        <div class="video-button">
+                            <input type="image" onclick="hd_stop()" src="./images/헤더영상정지아이콘.png" />
+                            <input type="image" onclick="hd_start()" src="./images/헤더영상재생아이콘.png" />
+                        </div>
+                    </div> <!-- text-button -->
+                    <div class="bottom-rightmenu">
+                        <ul class="right-info">
+                            <li>
+                                <a href="#!">
+                                    <img src="./images/날씨 아이콘.png" alt="날씨">
+                                    <p>날씨정보</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <img src="./images/안내도 아이콘.png" alt="안내도">
+                                    <p>안내도</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <img src="./images/탐방등급지도 아이콘.png" alt="탐방등급지도">
+                                    <p>탐방등급지도</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#!">
+                                    <img src="./images/홍보책자.png" alt="홍보책자">
+                                    <p>홍보책자</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- bottom-rightmenu -->
+                </div><!-- text-menu -->
+            </div> <!-- container -->
+        </div> <!-- bottom-text-menu -->
+    </div> <!-- bottom-text-menu -->
+    </header>
+
+    <main>
+        <section class="mt-climbing">
+            <div class="backColor">
+                <h2>배경색 #90b77d</h2>
+            </div>
+            <h2>mt-climbing</h2>
+            <div class="container">
+                <div class="trip-info">
+                    <div class="trip-map">
+                        <p>다양한 탐방코스를<br>확인해보세요</p>
+                        <img src="./images/난이도이미지.png" alt="탐방난이도">
+                        <div class="link-button"><a href ="#!">바로가기</a></div>
+                    </div>
+                    <article class="tripnews-img">
+                        <div class="tripnews">
+                            <img src="./images/탐방소식이미지.png" alt="탐방소식">
+                            <p><a href="#!">탐방소식</a></p>
+                        </div>                
+                        <div class="climbing-img">
+                            <!-- <img src="./images/암장이미지.png">  -->
+                        </div>
+                    </article> <!-- tripnews-img -->
+                </div> <!-- trip-info -->
+                <div class="reservation-menu">
+                    <ul>
+                        <li>
+                            <a href="#!">
+                                <img src="./images/예약통합시스템 아이콘.png" alt="예약통합시스템">
+                                <p>예약통합시스템</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <img src="./images/야영장예약 아이콘.png" alt="야영장예약">
+                                <p>야영장예약</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <img src="./images/대피소예약 아이콘.png" alt="대피소예약">
+                                <p>대피소예약</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#!">
+                                <img src="./images/암장허가신청 아이콘.png" alt="암장허가신청">
+                                <p>암장허가신청</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- reservation-menu -->
+            </div> <!-- container -->
+        </section> <!-- mt-climbing -->
+
+        <section class="program-info">
+            <h2>program-info</h2>
+            <div class="container">
+                <h3>탐방 프로그램</h3>
+                <div class="pro-list">
+                    <div class="pro1">
+                        <img src="./images/백담계곡.png" alt="백담계곡">
+                        <div class="pro-text">
+                            <h4 class="pro-title">백담계곡<br>맑은물 따라 생태여행</h4>
+                        </div>
+                        <div class="pro-link">
+                            <p><a href="#!">예약하기</a></p>
+                        </div>
+                    </div> <!-- pro1 -->
+                    <div class="pro2">
+                        <img src="./images/비룡폭포.png" alt="비룡폭포">
+                        <div class="pro-text">
+                            <h4 class="pro-title">비룡폭포<br>오솔길 따라 숲 속 탐험</h4>
+                        </div>
+                        <div class="pro-link">
+                            <p><a href="#!">예약하기</a></p>
+                        </div>
+                    </div> <!-- pro2 -->
+                    <div class="pro3">
+                        <img src="./images/오색약수터.png" alt="오색약수터">
+                        <div class="pro-text">
+                            <h4 class="pro-title">오색약수터<br>주전골 굽이굽이 생태이야기</h4>
+                        </div>
+                        <div class="pro-link">
+                            <p><a href="#!">예약하기</a></p>
+                        </div>
+                    </div> <!-- pro3 -->
+                    <div class="pro4">
+                        <img src="./images/설악산생태탐방원 이미지.png" alt="설악산생태탐방원">
+                        <div class="pro-text">
+                            <h4 class="pro-title">설악산 생태 탐방원<br>건강 나누리 캠프</h4>
+                        </div>
+                        <div class="pro-link">
+                            <p><a href="#!">예약하기</a></p>
+                        </div>
+                    </div> <!-- pro4 -->
+                </div> <!-- pro-list -->
+
+
+                <div class="wildlife">
+                    <h4>깃대종</h4>
+                    <div class="circle">
+                        <div class="circle1-img">
+                            <a href="#!">
+                                <p>눈잣나무</p>
+                                <img src="./images/눈잣나무.png" alt="눈잣나무">
+                            </a>
+                        </div>
+                        <div class="circle2-img">
+                            <a href="#!">
+                                <p>산양</p>
+                                <img src="./images/산양.png" alt="산양">
+                            </a>
+                        </div>
+                    </div>
+                </div> <!-- wildlife -->
+                <div class="display-info">
+                    <div class="ph-display">
+                        <h4>사진전</h4>
+                        <div class="display-img">
+                            <img src="./images/설악산 장려.png" alt="국립공원사진전 설악산">
+                        </div>
+                        <div class="display-text">
+                            <p><a href="#!">20회 국립공원 사진전 장려상 -설악의 산세- 이승아</a></p>
+                        </div>
+                    </div>
+                    <div class="infoBox">
+                        <h3>사무소 알림판<h3>
+                                <ul class="info">
+                                    <li>
+                                        <a href="#!">
+                                            <p>[설악산] 탐방통제정보 변경 알림 (9. 26. ~ 9. 30.)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <p>[설악산] 국립공원 탐방로(남교리~대승령) 임시 출입통제 연...</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <p>[설악산] 탐방통제정보 변경 알림 (9. 20. 03:00 ~)</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <p>기상특보(호우주의보) 발효에 따른 탐방로 부분통제 안내(9...</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">
+                                            <p>[설악산]양폭대피소 생수 품절 안내</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                    </div> <!-- infoBox -->
+                </div> <!-- display-info -->
+            </div> <!-- container -->
+        </section> <!-- program-info -->
+
+        <section class="main-media">
+            <div class="container">
+                <div class="photo-video">
+                    <div class="photo">
+                        <did class="photo1">
+                            <img src="./images/대청봉의 무지개.png" alt="대청봉의 무지개">
+                            <a class="pic-icon" href="#!"><img src="./images/사진아이콘.png" alt="사진아이콘"></a>
+                        </did>
+                        <did class="photo2">
+                            <img src="./images/공룡능선 운해.png" alt="공룡능선 운해">
+                            <a class="pic-icon" href="#!"><img src="./images/사진아이콘.png" alt="사진아이콘"></a>
+                        </did>
+                        <did class="photo3">
+                            <img src="./images/용소폭포.png" alt="용소폭포">
+                            <a class="pic-icon" href="#!"><img src="./images/사진아이콘.png" alt="사진아이콘"></a>
+                        </did>
+                    </div> <!-- photo -->
+                    <div class="video">
+                        <div class="videobox">
+                            <video id="prvideo" poster="./images/영상이미지.png" width="780" height="390">
+                                <source src="https://tv.knps.or.kr/media/90/M20170207163733.mp4" type="video/mp4">
+                                <p>이 브라우저는 HTML5 비디오를 지원하지 않습니다.</p>
+                            </video>
+                            <input type="image" onclick="video_start()" src="./images/화면 재생.png" />
+                        </div>
+                        <div class="text-ctrl">
+                            <!-- <p>현재모습이 궁금하다면 <span class="cc-info">실시간영상Click</span></p> -->
+                            <div class="ctrlbox">
+                                <input class="bt-start" type="image" onclick="video_start()" src="./images/재생아이콘.png" />
+                                <input class="bt-stop" type="image" onclick="video_stop()" src="./images/중지 아이콘.png" />
+                            </div>
+                        </div>
+                    </div><!-- video -->
+                </div><!-- photo-video-->
+            </div> <!-- container -->
+        </section> <!-- main-media -->
+    </main>
+
+    <footer>
+        <div class="footerbox">
+            <h2>footerbox</h2>
+            <div class="container">
+                <div class="sns-logo-text">
+                    <div class="sns">
+                        <a href="#!"><img src="./images/페이스북로고.png" alt="페이스북"></a>
+                        <a href="#!"><img src="./images/인스타그램 로고.png" alt="인스타그램"></a>
+                        <a href="#!"><img src="./images/네이버블로그 로고.png" alt="네이버블로그"></a>
+                        <a href="#!"><img src="./images/카카오스토리 로고.png" alt="카카오스토리"></a>
+                        <a href="#!"><img src="./images/유튜브 로고.png" alt="유튜브"></a>
+                    </div>
+                    <div class="logo-text">
+                        <div class="footer-logo">
+                            <img src="./images/푸터로고.png" alt="국립공원로고">
+                        </div>
+                        <div class="address-copyright">
+                            <address>
+                                설악산국립공원 : 24903 강원도 속초시 설악산로 833번지 (설악동) 사업자등록번호 : 227-82-00746<br>
+                                대표전화 : 033-801-0900 팩스번호 : 033-801-0969
+                            </address>
+                            <p class="copyright">Copyright © Korea National Park Service. All Rights Reserved.</p>
+                        </div>
+                    </div><!-- logo-text -->
+                </div> <!-- sns-logo-text -->
+            </div><!-- container -->
+        </div> <!-- footerbox -->
+        <div class="fixed-menu">
+            <a href="#gnb"><span>↑</span>TOP</a>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
