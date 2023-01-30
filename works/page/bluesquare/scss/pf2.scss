@@ -36,6 +36,34 @@ header {
     height: 803px;
     background: url(../img/bg.jpg) no-repeat center;
     background-size: cover;
+
+    .git {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      span {
+
+        img {
+          display: none;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        
+        img {
+          display: none;
+        }
+
+        .i-git {
+
+          img {
+            display: block;
+          }
+        }
+      }
+    }
     
     .title h1 {
       padding-top: 8rem;

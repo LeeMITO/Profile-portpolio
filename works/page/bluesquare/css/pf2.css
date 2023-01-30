@@ -93,6 +93,23 @@ header .header-wrap {
   background: url(../img/bg.jpg) no-repeat center;
   background-size: cover;
 }
+header .header-wrap .git {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+header .header-wrap .git span img {
+  display: none;
+}
+header .header-wrap .git:hover {
+  cursor: pointer;
+}
+header .header-wrap .git:hover img {
+  display: none;
+}
+header .header-wrap .git:hover .i-git img {
+  display: block;
+}
 header .header-wrap .title h1 {
   padding-top: 8rem;
   font-size: 5rem;

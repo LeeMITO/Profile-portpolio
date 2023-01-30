@@ -93,6 +93,24 @@ header .header-wrap {
   height: 803px;
   background: url(../img/seorak.png) no-repeat center;
   background-size: cover;
+  position: relative;
+}
+header .header-wrap .git {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+header .header-wrap .git span img {
+  display: none;
+}
+header .header-wrap .git:hover {
+  cursor: pointer;
+}
+header .header-wrap .git:hover img {
+  display: none;
+}
+header .header-wrap .git:hover .i-git img {
+  display: block;
 }
 header .header-wrap .title h1 {
   text-align: center;
